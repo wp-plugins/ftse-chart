@@ -21,7 +21,7 @@ Yahoo! Finance is polled at intervals for the current chart
 = How often is the chart updated? =
 At least once per hour, more often if the server is not overloaded
 = Why not embed the Yahoo! Finance directly = 
-You can of course do this if you prefer, or yu might choose to use this widget for 
+You can of course do this if you prefer, or you might choose to use this widget for 
 greater control and to take advantage of chart image caching.
 == Screenshots ==
 1. The FTSE 100 Chart from Yahoo! Finance.
