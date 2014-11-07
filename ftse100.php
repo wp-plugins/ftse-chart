@@ -3,7 +3,7 @@
   Plugin Name: FTSE 100 Chart
   Plugin URI:
   Description: Adds a Widget so you can embed a FTSE 100 chart anywhere on your Wordpress site.
-  Version: 1.0
+  Version: 1.1
   Author: KiwiCoder
   Author URI: http://coder.kiwi
   License: GPLv2
@@ -54,6 +54,16 @@ class ftse_widget extends WP_Widget {
 
 function ftse_register_widget() {
     register_widget('ftse_widget');
+}
+
+add_shortcode('ftse_chart', 'ftse_chart_shortcode');
+
+function ftse_chart_shortcode($atts) {
+    $json = file_get_contents('http://m8y.co/api/ftse');
+    $obj = json_decode($json);
+
+    $output = '<img src="' . $obj->url . '"/>';
+    return $output;
 }
 
 add_action('widgets_init', 'ftse_register_widget');
