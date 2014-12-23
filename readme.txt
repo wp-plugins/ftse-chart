@@ -4,11 +4,11 @@ Donate link:
 Tags: widget,FTSE, UKX, FTSE100
 Requires at least: 3.0
 Tested up to: 4.1
-Stable tag: 1.1
+Stable tag: 1.2
 FTSE 100 chart widget.
 License: GPLv2
 == Description ==
-Adds a Widget and a shortcode so you can easily embed a 
+Adds a Widget and a shortcode [ftse_chart] so you can easily embed a 
 FTSE 100 chart anywhere on your Wordpress site.
 == Installation ==
 1. Upload the FTSE100 folder to the '/wp-content/plugins/' folder
@@ -31,5 +31,7 @@ greater control and to take advantage of chart image caching.
 * First version
 = Version 1.1 =
 * Added shortcode [ftse_chart]
+= Version 1.2 =
+* Added css class name "ftse_css"
 == Upgrade Notice ==
 n/a
