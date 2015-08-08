@@ -45,7 +45,7 @@ class ftse_widget extends WP_Widget {
         $json = file_get_contents('http://m8y.co/api/ftse');
         $obj = json_decode($json);
 
-        echo '<img class="ftse100-chart" src="' . $obj->url . '"/>';
+        echo '<img class="ftse-100-chart" src="' . $obj->url . '"/>';
 
         echo $after_widget;
     }
@@ -62,7 +62,7 @@ function ftse_chart_shortcode($atts) {
     $json = file_get_contents('http://m8y.co/api/ftse');
     $obj = json_decode($json);
 
-    $output = '<img src="' . $obj->url . '"/>';
+    $output = '<img class="ftse-100-chart" src="' . $obj->url . '"/>';
     return $output;
 }
 
