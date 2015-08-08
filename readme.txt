@@ -3,8 +3,8 @@ Contributors: KiwiCoder
 Donate link: 
 Tags: widget,FTSE, UKX, FTSE100
 Requires at least: 3.0
-Tested up to: 4.1
-Stable tag: 1.2
+Tested up to: 4.3
+Stable tag: 1.3
 FTSE 100 chart widget.
 License: GPLv2
 == Description ==
@@ -33,5 +33,7 @@ greater control and to take advantage of chart image caching.
 * Added shortcode [ftse_chart]
 = Version 1.2 =
 * Added css class name "ftse_css"
+= Version 1.3 =
+* Updated to be compatible with Wordpress 4.3
 == Upgrade Notice ==
 n/a
