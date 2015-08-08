@@ -45,7 +45,7 @@ class ftse_widget extends WP_Widget {
         $json = file_get_contents('http://m8y.co/api/ftse');
         $obj = json_decode($json);
 
-        echo '<img src="' . $obj->url . '"/>';
+        echo '<img class="ftse100-chart" src="' . $obj->url . '"/>';
 
         echo $after_widget;
     }
